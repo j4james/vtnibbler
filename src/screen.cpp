@@ -112,8 +112,6 @@ void screen::play_sound(const int pitch)
         _write(_csi, "4;1;", pitch, ",~");
 }
 
-// static int max_used = 0;
-
 void screen::pause(const std::chrono::milliseconds milliseconds)
 {
     flush();
@@ -128,19 +126,6 @@ void screen::flush()
             std::cout.write(&_buffer[0], _buffer_index);
             std::cout.flush();
         }
-
-        // max_used = std::max(max_used, _buffer_index);
-        // std::cout << "\0337\033[H\033[m\033(B" << _buffer_index << "   \t" << max_used << "   ";
-        // if (_caps.has_8bit)
-        //     std::cout << "\r\n8-bit";
-        // else
-        //     std::cout << "\r\n7-bit";
-        // std::cout << "\0338";
-        // std::cout.flush();
-        // if (_buffer_index > 100) {
-        //     max_used = 0;
-        // }
-
         _buffer_index = 0;
     }
 }
