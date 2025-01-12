@@ -11,6 +11,9 @@ You'll also need at least a 19200 baud connection to play at the default
 frame rate. If you find the input is lagging, try selecting a slower speed
 using the command line option `--speed 4` or `--speed 3`.
 
+And if you're on a VT525, you may also be able to improve the performance by
+disabling the palette animations using the `--noblink` option.
+
 [Nibbler]: https://en.wikipedia.org/wiki/Nibbler_(video_game)
 
 
@@ -60,7 +63,7 @@ Supported Terminals
 | DEC VT330/340      | no    | no    |
 | DEC VT382          | no    | no    |
 | DEC VT420          | no    | no    |
-| DEC VT510/520      | no    | no    |
+| DEC VT510/520      | no    | yes   |
 | DEC VT525          | yes   | yes   |
 | KoalaTerm          | no    | no    |
 | MLTerm             | part  | no    |
