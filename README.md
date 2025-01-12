@@ -63,7 +63,8 @@ Supported Terminals
 | DEC VT330/340      | no    | no    |
 | DEC VT382          | no    | no    |
 | DEC VT420          | no    | no    |
-| DEC VT510/520      | no    | yes   |
+| DEC VT510          | no    | no    |
+| DEC VT520          | no    | yes   |
 | DEC VT525          | yes   | yes   |
 | KoalaTerm          | no    | no    |
 | MLTerm             | part  | no    |
